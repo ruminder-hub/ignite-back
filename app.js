@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
   res.json('error');
 });
 
-let port = 3000
+let port = 8080
 //server port
 app.listen(port, () => {
   console.log(`Server is runing on port: ${port}`);
