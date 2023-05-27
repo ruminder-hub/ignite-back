@@ -46,7 +46,7 @@ app.use(function(err, req, res, next) {
   res.json('error');
 });
 
-let port = 8080
+const port = process.env.PORT || 3000;
 //server port
 app.listen(port, () => {
   console.log(`Server is runing on port: ${port}`);
