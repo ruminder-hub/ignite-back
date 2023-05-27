@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 // var cookieParser = require('cookie-parser');
 // var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -16,10 +16,10 @@ var app = express();
 
 
 
-const uri = "mongodb+srv://igniteAdmin:6Yx0hbSU3dqsdW8F@webproject.88plx.mongodb.net/temp"
-console.log(uri);
-mongoose.connect(uri);
-const connection = mongoose.connection;
+// const uri = "mongodb+srv://igniteAdmin:6Yx0hbSU3dqsdW8F@webproject.88plx.mongodb.net/temp"
+// console.log(uri);
+// mongoose.connect(uri);
+// const connection = mongoose.connection;
 
 // app.use(logger('dev'));
 // app.use(express.json());
@@ -28,7 +28,7 @@ const connection = mongoose.connection;
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => res.send('Home Page Route'));
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 
 // // catch 404 and forward to error handler
 // app.use(function(req, res, next) {
