@@ -47,6 +47,7 @@ app.use(function(err, req, res, next) {
 });
 
 const port = process.env.PORT || 3000;
+console.log(`Port is ${port}`);
 //server port
 app.listen(port, () => {
   console.log(`Server is runing on port: ${port}`);
